@@ -1,4 +1,4 @@
-Standard
+Packages
 
 1. fnm -> ensure node version
 2. eslint
@@ -6,4 +6,8 @@ Standard
 4. husky
 5. storybook
 6. redux
-7. atomic design
+7. axios
+
+Design Pattern
+
+1. atomic design
