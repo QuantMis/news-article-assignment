@@ -13,6 +13,11 @@ class NewsController extends Controller
         return response()->json($news);
     }
 
+    public function show($id) {
+        $news = News::findOrFail($id);
+        return response()->json($news);
+    }
+
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -41,5 +46,10 @@ class NewsController extends Controller
         $news->update($validated);
 
         return response()->json(['message' => 'News article updated successfully', 'data' => $news]);
+    }
+
+    public function destroy($id) {
+        $news = News::findOrFail($id)->delete();
+        return response()->json(['message' => 'News article deleted successfully']);
     }
 }

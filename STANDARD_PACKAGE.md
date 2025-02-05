@@ -7,6 +7,8 @@ Packages
 5. storybook
 6. redux
 7. axios
+8. yup
+9. formik
 
 Design Pattern
 
